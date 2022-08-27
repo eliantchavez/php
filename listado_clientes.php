@@ -42,7 +42,7 @@ if(isset($_GET["pos"])){
     $pos = $_GET["pos"];
     //Elimina la posición del array indicado
     unset($aClientes[$pos]);
-    //Actializo la variable de session con el array actualizado
+    //Actualizo la variable de session con el array actualizado
     $_SESSION["listadoClientes"] = $aClientes;
     header("Location: listado_clientes.php");
 
